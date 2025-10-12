@@ -1,3 +1,4 @@
+#Ejemplo de la libreria Re (Exposición Mía)
 import re
 
 correo = "usuario123@gmail.com"
