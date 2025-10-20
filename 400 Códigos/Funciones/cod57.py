@@ -1,14 +1,14 @@
 def SantiagoAnalisis(SantiagoLista):
     SantiagoLista.sort()
-    n = len(SantiagoLista)
-    mediana = (SantiagoLista[n//2] if n % 2 != 0 else (SantiagoLista[n//2 - 1] + SantiagoLista[n//2]) / 2)
-    return sum(SantiagoLista)/n, mediana, max(SantiagoLista)
+    SantiagoN = len(SantiagoLista)
+    SantiagoMediana = (SantiagoLista[SantiagoN//2] if SantiagoN % 2 != 0 else (SantiagoLista[SantiagoN//2 - 1] + SantiagoLista[SantiagoN//2]) / 2)
+    return sum(SantiagoLista)/SantiagoN, SantiagoMediana, max(SantiagoLista)
 
 def SantiagoMain():
     try:
-        datos = [float(x) for x in input("Números separados por comas: ").split(",")]
-        media, mediana, maximo = SantiagoAnalisis(datos)
-        print(f"Media: {media}, Mediana: {mediana}, Máximo: {maximo}")
+        SantiagoDatos = [float(x) for x in input("Números separados por comas: ").split(",")]
+        SantiagoMedia, SantiagoMediana, SantiagoMax = SantiagoAnalisis(SantiagoDatos)
+        print(f"Media: {SantiagoMedia}, Mediana: {SantiagoMediana}, Máximo: {SantiagoMax}")
     except:
         print("Error en los datos.")
 

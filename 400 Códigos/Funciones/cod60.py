@@ -1,5 +1,5 @@
 def SantiagoBConvertirCmAPulgadas(SantiagoCm):
     return SantiagoCm / 2.54
 
-cm = float(input("Ingresa centímetros: "))
-print(f"{cm} cm = {SantiagoBConvertirCmAPulgadas(cm):.2f} pulgadas")
+SantiagoCm = float(input("Ingresa centímetros: "))
+print(f"{SantiagoCm} cm = {SantiagoBConvertirCmAPulgadas(SantiagoCm):.2f} pulgadas")

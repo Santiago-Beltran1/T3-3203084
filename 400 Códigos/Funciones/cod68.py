@@ -5,6 +5,6 @@ def SantiagoBTemporizador(SantiagoSegundos, SantiagoMensaje):
     time.sleep(SantiagoSegundos)
     print(SantiagoMensaje)
 
-seg = int(input("Segundos: "))
-msg = input("Mensaje al finalizar: ")
-SantiagoBTemporizador(seg, msg)
+SantiagoSeg = int(input("Segundos: "))
+SantiagoMsg = input("Mensaje al finalizar: ")
+SantiagoBTemporizador(SantiagoSeg, SantiagoMsg)

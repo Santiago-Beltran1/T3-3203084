@@ -1,8 +1,8 @@
-def SantiagoBuscarNumero(SantiagoLista, SantiagoNum):
-    return SantiagoNum in SantiagoLista
+def SantiagoBuscarNumero(SantiagoList, SantiagoNum):
+    return SantiagoNum in SantiagoList
 
 def SantiagoBuscar():
-    SantiagoLista = [int(x) for x in input("Números separados por espacio: ").split()]
+    SantiagoLista = [int(SantiagoX) for SantiagoX in input("Números separados por espacio: ").split()]
     SantiagoNum = int(input("Número a buscar: "))
     print("Encontrado:", SantiagoBuscarNumero(SantiagoLista, SantiagoNum))
 

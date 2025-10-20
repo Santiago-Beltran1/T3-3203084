@@ -8,7 +8,7 @@ def SantiagoBBatalla():
     SantiagoBSalud1 = 30
     SantiagoBSalud2 = 30
     while SantiagoBSalud1 > 0 and SantiagoBSalud2 > 0:
-        input("\nPresiona ENTER para atacar ⚔️")
+        input("\nPresiona ENTER para atacar")
         SantiagoBDano1 = SantiagoBAtacar(random.randint(4, 10), random.randint(2, 8))
         SantiagoBDano2 = SantiagoBAtacar(random.randint(4, 10), random.randint(2, 8))
         SantiagoBSalud1 -= SantiagoBDano2

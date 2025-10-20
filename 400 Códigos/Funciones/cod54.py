@@ -1,5 +1,5 @@
 def SantiagoTienda():
-    SantiagoProductos = {"pan": 2000, "leche": 3500, "huevo": 12000}
+    SantiagoProductos = {"esfero": 2000, "gel": 3500, "pollo": 12000}
     SantiagoCarrito = []
     while True:
         print("\nProductos disponibles:")

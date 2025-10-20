@@ -1,18 +1,18 @@
 import random
 
 def SantiagoBJuegoPPT():
-    opciones = ["piedra", "papel", "tijera"]
-    jugador = input("Elige piedra, papel o tijera: ").lower()
-    maquina = random.choice(opciones)
-    print(f"La máquina eligió: {maquina}")
+    SantiagoOpc = ["piedra", "papel", "tijera"]
+    SantiagoJug = input("Elige piedra, papel o tijera: ").lower()
+    SantiagoCPU = random.choice(SantiagoOpc)
+    print(f"La máquina eligió: {SantiagoCPU}")
 
-    if jugador == maquina:
+    if SantiagoJug == SantiagoCPU:
         print("Empate.")
-    elif (jugador == "piedra" and maquina == "tijera") or \
-         (jugador == "papel" and maquina == "piedra") or \
-         (jugador == "tijera" and maquina == "papel"):
-        print("Ganaste 🎉")
+    elif (SantiagoJug == "piedra" and SantiagoCPU == "tijera") or \
+         (SantiagoJug == "papel" and SantiagoCPU == "piedra") or \
+         (SantiagoJug == "tijera" and SantiagoCPU == "papel"):
+        print("Ganaste ")
     else:
-        print("Perdiste 💀")
+        print("Perdiste ")
 
 SantiagoBJuegoPPT()

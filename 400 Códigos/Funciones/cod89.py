@@ -1,8 +1,8 @@
 def SantiagoBPasos():
-    pasos = int(input("Ingrese cantidad de pasos del día: "))
-    calorias = pasos * 0.04
-    distancia = pasos * 0.8 / 1000
-    print(f"Distancia: {distancia:.2f} km")
-    print(f"Calorías aproximadas quemadas: {calorias:.1f}")
+    SantiagoPasos = int(input("Ingrese cantidad de pasos del día: "))
+    SantiagoCalo = SantiagoPasos * 0.04
+    SantiagoDist = SantiagoPasos * 0.8 / 1000
+    print(f"Distancia: {SantiagoDist:.2f} km")
+    print(f"Calorías aproximadas quemadas: {SantiagoCalo:.1f}")
 
 SantiagoBPasos()
