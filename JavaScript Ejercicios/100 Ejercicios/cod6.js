@@ -1,0 +1,11 @@
+// Verificar si un número es primo
+function esPrimo(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+console.log(esPrimo(9));
+console.log(esPrimo(17));
